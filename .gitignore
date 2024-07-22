@@ -3,3 +3,5 @@
 *.tar 
 *.mp3
 *.m4a
+*.h5
+*.keras
