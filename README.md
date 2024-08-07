@@ -1,4 +1,4 @@
-# Bird Calls
+# Bird Calls 🐦 📲
 ### 📌 Objective: 
 The purpose of this experiment is to train a machine learning algorithm, in this case a 2D convolutional network (CNN), to produce predictions of call types of bird call recordings. The resulting prediction probabiltiies will be compositional data, or in other words, sum to 1. The species used for this iteration was the Downy Woodpecker (*Dyrobates pubescens*), whose characteristic calls can broadly be separated into three classes: pik, drum, and laugh. 
 
