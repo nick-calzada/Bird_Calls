@@ -1,5 +1,5 @@
 # Bird_Calls
-Data processing steps for bioacoustic and climatic information used in hyperspheric analysis. Original bioacoustic data were sourced from the Macauly Library at the Cornell Lab of Ornithology - an open-source, crowd-sourced data repository housing media of many animal species. For this analysis, we focused on bioacoustic samples from the *D. pubescens* (downy woodpecker) species from the Northeastern United States, during the springs of 2020-2023.
+Data processing steps for bioacoustic and climatic information used in a hyperspheric analysis. Original bioacoustic data were sourced from the Macauly Library at the Cornell Lab of Ornithology - an open-source, crowd-sourced data repository housing media of many animal species. For this analysis, we focused on bioacoustic samples from the *D. pubescens* (downy woodpecker) species from the Northeastern US during the springs of 2020-2023.
 
 ## Directory Structure
 ```txt
