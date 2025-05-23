@@ -1,5 +1,5 @@
 # Bird_Calls
-Data processing steps for pre-processing bioacoustic and climatic information for use in a Hyperspheric analysis.
+Data processing steps for bioacoustic and climatic information used in hyperspheric analysis. Original bioacoustic data were sourced from the Macauly Library at the Cornell Lab of Ornithology - an open-source, crowd-sourced data repository housing media of many animal species. For this analysis, we focused on bioacoustic samples from the *D. pubescens* (downy woodpecker) species from the Northeastern United States, during the springs of 2020-2023.
 
 ## Directory Structure
 ```txt
@@ -15,11 +15,11 @@ Bird_Calls/
 └── 03_summarize/                      
     ├── eta_plot.jpeg                    # Visual of model eta coefficients
     ├── plot_etas.R                      # R script to generate eta_plot.jpeg
-    ├── spatial_prediction_maps.jpeg     # Visual summary of spatial predictions
-    ├── spect_samples.jpg                # Example spectrograms used in modeling
-    ├── spect_fig_and_sample_nums.ipynb  # Jupyter notebook creating spectrogram figures
-    ├── prediction_map.R                 # R script to generate prediction maps
-    └── plot_avg_temp_and_precip_across_years.R  # R script for temp/precip trends
+    ├── spect_samples.jpg                # Example spectrograms used in modeling (Fig. 2)
+    ├── spect_fig_and_sample_nums.ipynb  # Plot random sample of spectrograms for each call type (Fig. 2) 
+    ├── spatial_prediction_maps.jpeg     # Visual summary of spatial predictions (Fig. 5)
+    ├── prediction_map.R                 # R script to generate prediction maps (Fig. 5)
+    ├── covs_across_years.jpeg           # Precipitation and temperature trends from 2020-2023 (Fig. 6) 
+    └── plot_avg_temp_and_precip_across_years.R  # R script for temp/precip trends (Fig. 6)
 
 ```
-
