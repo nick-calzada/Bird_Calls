@@ -6,7 +6,13 @@ Data processing steps for bioacoustic and climatic information used in a hypersp
 Bird_Calls/
 ├── 01_data/                           
 │   ├── bioacoustic/                     # Raw bioacoustic recordings and trimmed final samples
+│   │   ├── crop_wav_files.ipynb         # Crop categorized .wav files into 1-second clips
+│   │   └── get_high_rated_recordings.R  # Extract recordings with a 3-5 star rating
+│   │
 │   └── covariates/                      # Environmental covariates (e.g., temp, precip)
+│       ├── grid_code.R                  # Create a regular grid across region of interest with extracted covariate information for predictions of bioacoustic compositions
+│       ├── make_datasets.R              # Make datasets of observed calls and associated covariate information
+│       └── make_seasonal_data.R         # Make datasets corresponding to the spring of each year analyzed (2020-2023)
 │
 ├── 02_train_and_predict/              
 │   ├── train.ipynb                      # Train the model on classified samples
