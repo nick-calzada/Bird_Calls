@@ -133,5 +133,5 @@ combined_plot <- (row_1 / row_2 / row_3)
 combined_plot
 
 # Save plot for export ---------------------------------------------------------
-ggsave(here('FINAL_PIPELINE','03_summarize','spatial_prediction_maps.jpeg'), plot = combined_plot, width = 12, height = 8, units = 'in', dpi = 600)
+ggsave(here('03_summarize','spatial_prediction_maps.jpeg'), plot = combined_plot, width = 12, height = 8, units = 'in', dpi = 600)
 
