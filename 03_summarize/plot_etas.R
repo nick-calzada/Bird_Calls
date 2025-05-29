@@ -6,11 +6,15 @@ library(viridis)
 library(here)
 load('eta_pred.RData')
 
+# States included in the region analyzed
 ne_region <-
   states(cb = TRUE, class = 'sf') %>%
   filter(STUSPS %in% c('CT', 'ME', 'MA', 'NH', 'NJ', 'NY', 'RI', 'VT', 'PA', 'DE', 'MD'))
 
-SIZE <- 60 # dimensions of grid 
+# Dimensions of prediction grid
+SIZE <- 60 
+
+# Coordinates of spatial boundary to visualize
 min_lat <- 37.912222
 max_lat <- 47.459722
 min_long <- -80.519444
@@ -62,7 +66,7 @@ for(i in c(1:3)){
 
 }
 
-
+# Combine plots into one row
 eta_row_plot <- wrap_plots(eta_plots[1:3], nrow = 1, ncol = 3) +
   plot_layout(guides = "collect") +
   theme(legend.position = c(1, 0.5), legend.byrow = TRUE) +
@@ -71,5 +75,5 @@ eta_row_plot <- wrap_plots(eta_plots[1:3], nrow = 1, ncol = 3) +
     legend.key.height = unit(10, "lines")
   )))
 
-# eta_row_plot
-ggsave(here('FINAL_PIPELINE','03_summarize','eta_plot.jpeg'), plot = eta_row_plot, dpi = 600)
+
+ggsave(here('03_summarize','eta_plot.jpeg'), plot = eta_row_plot, dpi = 600)
