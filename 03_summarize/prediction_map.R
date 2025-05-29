@@ -61,7 +61,6 @@ plot_prediction <- function(d, t, comp_pred, grid_data, dimen) {
       color = 'black',
       linewidth = 0.6
     ) +
-    # scale_fill_viridis(na.value = 'white', name = '') +
     scale_fill_viridis(
       na.value = 'white', 
       name = '',
@@ -74,24 +73,14 @@ plot_prediction <- function(d, t, comp_pred, grid_data, dimen) {
     theme_void() +
     theme(legend.position = 'none')
   
-  # if (d == 1) {
-  #   plot <- plot + labs(title = years[t]) + theme(plot.title = element_text(hjust = 0.5, size = 20))
-  # }
+  # Add year label if the first row
   if (d == 1) {
     plot <- plot + 
       labs(title = years[t]) + 
       theme(plot.title = element_text(hjust = 0.5, size = 20, face = 'bold')) 
-      # scale_fill_viridis(
-      #   na.value = 'white', 
-      #   name = '',
-      #   breaks = seq(min(grid_data$value, na.rm = TRUE), 
-      #                max(grid_data$value, na.rm = TRUE), 
-      #                length.out = 5), # Add 5 breaks in the color bar
-      #   labels = round(seq(min(grid_data$value, na.rm = TRUE), 
-      #                      max(grid_data$value, na.rm = TRUE), 
-      #                      length.out = 5), 2)  # Format the labels to 2 decimal places
-      
   }
+
+  # Add a call type label if the last column
   if (t == 4) {
     plot <- plot +
       labs(tag = calls[d]) +
